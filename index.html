@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Live</title>
+    <link href="./static/video-js.css" rel="stylesheet">
+    <style>
+        html,body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #myVideo {
+            /* border-left: 1px solid snow ; */
+            display: flex;
+            flex: 1 1 800px;
+            height: 50%
+        }
+        
+    </style>
+</head>
+
+<body>
+    <video id="myVideo" autoplay class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" data-setup='{}'>
+        <source id="source"
+            src="http://192.168.2.186/live/hls/aaa.m3u8"
+            type="application/x-mpegURL">
+    </video>
+    <video id="myVideo" autoplay class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
+        data-setup='{}'>
+        <source id="source" src="http://192.168.2.186/live/hls/bbb.m3u8" type="application/x-mpegURL">
+    </video>
+    <video id="myVideo" autoplay class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
+        data-setup='{}'>
+        <source id="source" src="http://192.168.2.186/live/hls/bbb.m3u8" type="application/x-mpegURL">
+    </video>
+    <video id="myVideo" autoplay class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
+        data-setup='{}'>
+        <source id="source" src="http://192.168.2.186/live/hls/aaa.m3u8" type="application/x-mpegURL">
+    </video>
+</body>
+<script src="./static/video.js"></script>
+</html>
